@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* amarillo claro*/
+.imagenFranquicia h3, .imagenFranquicia .parrafoFranquicia {
+  text-align: center;
+  color: black; }
+
+/* SECCION GALERIA */
+.imagenes {
+  background-color: #D4AC0D;
+  display: grid;
+  grid-template-columns: auto 33% 33%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "foto1 foto2 foto3" "foto6 foto4 foto5";
+  row-gap: 1px;
+  column-gap: 10px; }
+  .imagenes .imagenUno {
+    grid-area: foto1; }
+  .imagenes img {
+    width: 100%;
+    height: auto; }
+  .imagenes .imagenDos {
+    grid-area: foto2; }
+  .imagenes .imagenTres {
+    grid-area: foto3; }
+  .imagenes .imagenCuatro {
+    grid-area: foto6; }
+  .imagenes .imagenCinco {
+    grid-area: foto5; }
+  .imagenes .imagenSeis {
+    grid-area: foto4; }
+
+/*FOOTER*/
+.logoRedes {
+  display: flex;
+  padding: 10px 10px 0px 10px;
+  margin: 0px;
+  margin-bottom: 0px;
+  height: 40px;
+  width: 50px; }
+
+.footerNav {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+h2 {
+  margin-top: 50px; }
+
+/*FORMULARIO*/
+.formularioTamaño {
+  width: 100%; }
+
+.form-button {
+  margin-bottom: 80px;
+  margin-top: 40px; }
+
+/* FRANQUICIA */
+.imagenFranquicia {
+  width: auto;
+  height: 100vh;
+  background-image: url(../imagenes/choco.jpg);
+  background-size: cover; }
+  .imagenFranquicia h3 {
+    font-weight: bold;
+    font-size: 300%;
+    padding-top: 15%; }
+  .imagenFranquicia .parrafoFranquicia {
+    font-style: italic;
+    font-size: 1.3rem; }
+  .imagenFranquicia a {
+    text-decoration: none; }
+    .imagenFranquicia a button {
+      display: flex;
+      justify-content: center;
+      margin-left: 45%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Montserrat, Helvetica, sans-serif;
+  height: 100vh;
+  width: auto; }
+
+.logo {
+  width: 140px;
+  height: 80px; }
+
+#navMenu a:hover {
+  color: #F1C40F; }
+
+.contenedor1 {
+  width: 20%;
+  background-color: black; }
+
+.imagenTexto {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../imagenes/imagenAlfajor.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: #F6F7BB; }
+  .imagenTexto .contenedor {
+    width: 100%;
+    text-align: center; }
+    .imagenTexto .contenedor .bienvenidos {
+      text-align: left;
+      font-weight: bold;
+      font-size: 130%;
+      padding-bottom: 15%;
+      padding-left: 20px; }
+  .imagenTexto p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-left: 10%; }
+
+/* PRODUCTOS */
+.subtitulo {
+  font-size: 25px;
+  text-align: center; }
+
+.main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "foto1 foto2" "foto3 foto4"; }
+  .main .mainSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 30%;
+    padding-top: 8%;
+    padding-bottom: 8%; }
+    .main .mainSection .article {
+      width: 180%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10%;
+      margin: 5%;
+      border: 1px solid black;
+      border-radius: 20px;
+      font-size: 20px;
+      text-align: center; }
+      .main .mainSection .article h4 {
+        padding-top: 10%;
+        padding-left: 0%; }
+      .main .mainSection .article img {
+        width: 100%; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+  .imagenTexto {
+    background-image: url(../imagenes/imagenAlfajorMobile.jpeg);
+    background-size: cover; }
+  .imagenes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 300px;
+    grid-template-areas: "foto1 foto2"  "foto3 foto4" "foto5 foto6"; } }
+
+@media only screen and (max-width: 768px) {
+  p {
+    margin: 5%; }
+  .imagenFranquicia h3 {
+    font-size: 200%; }
+  .imagenes {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 300px; } }
+
+@media only screen and (max-width: 768px) {
+  .imagenes {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 300px; } }
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 180%; }
+  .imagenes {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "foto1"  "foto2"  "foto3"  "foto4" "foto5" "foto6";
+    row-gap: 0px;
+    column-gap: 0px; } }
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 130%; } }

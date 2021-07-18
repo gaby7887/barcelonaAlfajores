@@ -1,0 +1,55 @@
+/* SECCION GALERIA */
+
+.imagenes{
+    background-color: #D4AC0D;
+    display: grid;
+    grid-template-columns: auto 33% 33%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "foto1 foto2 foto3"
+                         "foto6 foto4 foto5";
+    row-gap: 1px;
+    column-gap: 10px;
+    
+    
+    .imagenUno{
+        grid-area: foto1;
+    
+    }
+
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .imagenDos{
+        grid-area: foto2;
+    }
+
+    
+
+    .imagenTres{
+        grid-area: foto3;
+    }
+
+
+
+    .imagenCuatro{
+        grid-area: foto6;
+        
+    }
+
+
+
+    .imagenCinco{
+        grid-area: foto5;
+    }
+
+
+    .imagenSeis{
+        grid-area: foto4;
+    }
+
+    .imagenSeis:hover{
+    }
+}
