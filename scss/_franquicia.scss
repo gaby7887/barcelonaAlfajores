@@ -1,7 +1,7 @@
 /* FRANQUICIA */
 
 .imagenFranquicia{
-    width: auto;
+    min-width: auto;
     height: 100vh;
     background-image: url(../imagenes/choco.jpg);
     background-size: cover;
@@ -11,6 +11,7 @@
         font-weight: bold;
         font-size: 300%;
         padding-top: 15%;
+        margin-bottom: 5%;
     }
 
     .parrafoFranquicia{
@@ -23,13 +24,12 @@
     a{
         text-decoration: none; 
 
-
     button{
         display: flex;
         justify-content: center;
         margin-left: 45%;
+        margin-top: 5%;
         
     }
-    }
-    
+    }   
 }

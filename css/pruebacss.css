@@ -6,6 +6,8 @@
 
 /* SECCION GALERIA */
 .imagenes {
+  height: auto;
+  min-width: auto;
   background-color: #D4AC0D;
   display: grid;
   grid-template-columns: auto 33% 33%;
@@ -30,42 +32,44 @@
     grid-area: foto4; }
 
 /*FOOTER*/
-.logoRedes {
-  display: flex;
-  padding: 10px 10px 0px 10px;
-  margin: 0px;
-  margin-bottom: 0px;
-  height: 40px;
-  width: 50px; }
-
 .footerNav {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px; }
+  .footerNav .logoRedes {
+    display: flex;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    margin-bottom: 0px;
+    height: 40px;
+    width: 50px; }
+  .footerNav #copy {
+    text-align: center; }
+    .footerNav #copy a {
+      list-style: none;
+      text-decoration: none;
+      color: white; }
 
 h2 {
   margin-top: 50px; }
 
 /*FORMULARIO*/
 .formularioTamaño {
-  width: 100%; }
-
-.form-button {
-  margin-bottom: 80px;
-  margin-top: 40px; }
+  min-width: auto; }
 
 /* FRANQUICIA */
 .imagenFranquicia {
-  width: auto;
+  min-width: auto;
   height: 100vh;
   background-image: url(../imagenes/choco.jpg);
   background-size: cover; }
   .imagenFranquicia h3 {
     font-weight: bold;
     font-size: 300%;
-    padding-top: 15%; }
+    padding-top: 15%;
+    margin-bottom: 5%; }
   .imagenFranquicia .parrafoFranquicia {
     font-style: italic;
     font-size: 1.3rem; }
@@ -74,7 +78,8 @@ h2 {
     .imagenFranquicia a button {
       display: flex;
       justify-content: center;
-      margin-left: 45%; }
+      margin-left: 45%;
+      margin-top: 5%; }
 
 * {
   margin: 0;
@@ -84,7 +89,7 @@ h2 {
 body {
   font-family: Montserrat, Helvetica, sans-serif;
   height: 100vh;
-  width: auto; }
+  min-width: auto; }
 
 .logo {
   width: 140px;
@@ -118,81 +123,162 @@ body {
     font-size: 1.2rem;
     margin-left: 10%; }
 
-/* PRODUCTOS */
+/* INICIO PRODUCTOS */
 .subtitulo {
   font-size: 25px;
-  text-align: center; }
+  text-align: center;
+  color: #1B2631; }
 
 .main {
   height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "foto1 foto2" "foto3 foto4"; }
+  min-width: 100vh; }
   .main .mainSection {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding-left: 5%;
-    padding-right: 30%;
-    padding-top: 8%;
-    padding-bottom: 8%; }
-    .main .mainSection .article {
-      width: 180%;
+    margin-bottom: 30px; }
+    .main .mainSection .mainDiv {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 10%;
-      margin: 5%;
-      border: 1px solid black;
-      border-radius: 20px;
-      font-size: 20px;
-      text-align: center; }
-      .main .mainSection .article h4 {
-        padding-top: 10%;
-        padding-left: 0%; }
-      .main .mainSection .article img {
-        width: 100%; }
+      flex-direction: row; }
+      .main .mainSection .mainDiv .article {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5%;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-size: 16px;
+        text-align: center; }
+        .main .mainSection .mainDiv .article h4 {
+          padding-top: 10%;
+          padding-left: 0%;
+          color: #17202A; }
+        .main .mainSection .mainDiv .article .cardTitle {
+          padding-left: 3px;
+          padding-right: 3px; }
+        .main .mainSection .mainDiv .article img {
+          width: 100%;
+          border-radius: 18px 18px 0px 0px; }
 
+/* FIN PRODUCTOS */
 /* MEDIA QUERIES */
 @media only screen and (max-width: 992px) {
   .imagenTexto {
     background-image: url(../imagenes/imagenAlfajorMobile.jpeg);
     background-size: cover; }
+  /* INICIO GALERIA*/
   .imagenes {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto 50%;
     grid-template-rows: auto 300px;
-    grid-template-areas: "foto1 foto2"  "foto3 foto4" "foto5 foto6"; } }
+    grid-template-areas: "foto1 foto2"  "foto3 foto4" "foto5 foto6"; }
+  /* FIN GALERIA*/
+  /*INICIO PRODUCTOS*/
+  .main {
+    height: auto;
+    min-width: 100vh; }
+    .main .mainSection {
+      flex-direction: row; }
+      .main .mainSection .mainDiv {
+        width: 50%;
+        flex-direction: column; }
+        .main .mainSection .mainDiv .article {
+          width: 70%;
+          margin: 15%;
+          font-size: 17px;
+          text-align: center; }
+  /*FIN PRODUCTOS*/ }
 
 @media only screen and (max-width: 768px) {
   p {
     margin: 5%; }
   .imagenFranquicia h3 {
-    font-size: 200%; }
+    font-size: 100%; }
+  /* INICIO GALERIA*/
   .imagenes {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 300px; } }
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto 300px; }
+  /* FIN GALERIA*/
+  /*INICIO PRODUCTOS*/
+  .main {
+    height: auto;
+    min-width: auto; }
+    .main .mainSection {
+      display: flex;
+      flex-direction: column; }
+      .main .mainSection .mainDiv {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .main .mainSection .mainDiv .article {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-left: 50%;
+          font-size: 17px;
+          text-align: center; }
+  /*FIN PRODUCTOS*/ }
 
 @media only screen and (max-width: 768px) {
+  /* INICIO GALERIA*/
   .imagenes {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 300px; } }
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto 300px; }
+  /* FIN GALERIA*/ }
 
 @media only screen and (max-width: 576px) {
   h1 {
     font-size: 180%; }
+  /* INICIO GALERIA*/
   .imagenes {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "foto1"  "foto2"  "foto3"  "foto4" "foto5" "foto6";
     row-gap: 0px;
-    column-gap: 0px; } }
+    column-gap: 0px; }
+  /* FIN GALERIA*/
+  /* INICIO PRODUCTOS*/
+  .main {
+    height: auto;
+    min-width: auto; }
+    .main .mainSection {
+      display: flex;
+      flex-direction: column; }
+      .main .mainSection .mainDiv {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .main .mainSection .mainDiv .article {
+          width: 120%;
+          display: flex;
+          flex-direction: column;
+          margin-left: 50%;
+          font-size: 17px;
+          text-align: center; }
+  /* FIN PRODUCTOS*/ }
 
 @media only screen and (max-width: 420px) {
   h1 {
-    font-size: 130%; } }
+    font-size: 130%; }
+  /* INICIO PRODUCTOS */
+  .main {
+    height: auto;
+    min-width: auto; }
+    .main .mainSection {
+      display: flex;
+      flex-direction: column; }
+      .main .mainSection .mainDiv {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .main .mainSection .mainDiv .article {
+          width: 150%;
+          display: flex;
+          flex-direction: column;
+          margin-left: 25%;
+          font-size: 17px;
+          text-align: center; }
+  /* FIN PRODUCTOS */ }

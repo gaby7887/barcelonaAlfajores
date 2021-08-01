@@ -1,6 +1,8 @@
 /* SECCION GALERIA */
 
 .imagenes{
+    height: auto;
+    min-width: auto;
     background-color: #D4AC0D;
     display: grid;
     grid-template-columns: auto 33% 33%;
@@ -13,9 +15,7 @@
     
     .imagenUno{
         grid-area: foto1;
-    
     }
-
 
     img{
         width: 100%;
@@ -24,27 +24,19 @@
 
     .imagenDos{
         grid-area: foto2;
-    }
-
-    
+    }   
 
     .imagenTres{
         grid-area: foto3;
     }
 
-
-
     .imagenCuatro{
-        grid-area: foto6;
-        
+        grid-area: foto6;        
     }
-
-
 
     .imagenCinco{
         grid-area: foto5;
     }
-
 
     .imagenSeis{
         grid-area: foto4;

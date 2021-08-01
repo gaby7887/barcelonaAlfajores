@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaby7887/barcelonaAlfajores.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gaby7887/barcelonaAlfajores/issues"
+  },
+  "homepage": "https://github.com/gaby7887/barcelonaAlfajores#readme",
   "description": ""
 }

@@ -1,12 +1,4 @@
 /*FOOTER*/
-.logoRedes{
-    display:flex;
-    padding: 10px 10px 0px 10px;
-    margin: 0px;
-    margin-bottom: 0px;
-    height: 40px;
-    width: 50px;
-}
 
 .footerNav{
     margin-left: 0px;
@@ -14,4 +6,25 @@
     margin-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
+
+    .logoRedes{
+        display:flex;
+        padding: 10px 10px 0px 10px;
+        margin: 0px;
+        margin-bottom: 0px;
+        height: 40px;
+        width: 50px;
+    }
+    #copy{
+        text-align: center;
+
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+    }
 }
+
+

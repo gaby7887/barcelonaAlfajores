@@ -68,7 +68,7 @@
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-     </div>
+    </div>
     <div class="row">
       <div class="col">
         <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
@@ -81,22 +81,49 @@
       <label for="exampleFormControlInput1" class="form-label"></label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
     </div>  
-    <br>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault" id="formCheck">
       Enviarme emails con promociones de la empresa
       </label>
-      <br> <br>
-      <div class="form-button">
-        <button type="button" class="btn btn-warning" type="submit" value="submit">Enviar</button>
+    </div>
+      
+
+      <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning mb-5 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Enviar
+    </button>
+
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Barcelona</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Gracias por contactarte con nosotros
+            </p>
+            <p>
+              A la brevedad nos contactaremos con vos
+            </p>
+            <p class="barcelona">
+              Atentamente: barcelona
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
+  </div>
+  </div>
   </div>
 </div>
-</div>
-</div>
-
 <!--FIN FORMULARIO-->
 
 
